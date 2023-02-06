@@ -1,0 +1,32 @@
+The Uniform of the Learning Network
+
+In this paragraph, I give a uniform of a Learning Network.
+
+The input x has Nx possiblity, so x in {0, 1, 2 ... Nx-1}
+The output y has Ny possiblity, so y in {0, 1, 2 ... Ny-1}
+
+The learning network is f(x), which have one input, one internal layer, and one output.
+So, f(x) = W(Max{0, x+B}). set f(0) = 0, so b must equal or less than 0.
+
+The target function F(x) that f(x) needs to simulate is a random reflection from X to Y.
+So F(n) = yn, which yn is a random number in Y.
+
+The dimension of B is Nx-1, bi = i, i = {0, 1, 2 ... Nx-2}.
+
+So we have:
+f(0, 0, 0 ... 0) = 0;
+f(1, 0, 0 ... 0) = y1;
+f(2, 1, 0 ... 0) = y2;
+.
+.
+.
+f(N-1, N-2, N-3 ... 1) = yn-1.
+
+then:
+w0 = y1;
+w1 = y2 - 2 * w1;
+.
+.
+.
+wn-2 = yn-1 - 2 * wn-3 - 3 * wn-4 ... N-1 * w0
+

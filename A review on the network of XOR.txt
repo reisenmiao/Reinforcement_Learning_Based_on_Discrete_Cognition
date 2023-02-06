@@ -1,0 +1,27 @@
+A review on the network of XOR
+
+For XOR, we have (0, 0) -> 0, (0, 1) -> 1, (1, 0) -> 1, (1, 1) -> 0
+
+So we set 0 represents (0, 0), 1 represents (0, 1) and so on.
+
+We mark f(0) = 0, f(1) = 1, f(2) = 1, f(3) = 0, and draw the graph of f(x)
+
+Then, we will see there are 3 setline in the graph, which means f(x) is consisted by 3 line structure.
+
+So we need 3 elements in the mid layer.
+
+According to uniform given above, we can have a network like this:
+
+......
+
+and now you can ckeck if it correct.
+
+For a network with original input, there is two dimension.
+The linierty of a two dimension is a surface.
+And we can see there is two surface in the paragraph of XOR, so we need two elements in mid layers. 
+And the network which given by the book works as follows:
+From x to mid layer, it build a surface random, then change one of a point.
+From mid layer to y, it is a linear surface.
+
+To a sumary, we can say that the network simulate a funtion based on the local linarity of the function. 
+ 
