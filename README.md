@@ -3,8 +3,8 @@
 ### Reinforcement Learning based on Discrete Cognition
 It gives the base concept of this project. We mark it a concept_0.
 
-### A Uniform of the Learning Network
-It gives a uniform of full connected learning network, based on:
+### The General Form of the Full Connected Network 
+It gives the General form of full connected learning network, based on:
 - the concept_0;
 - the discover that the network learns a funtion based on the local linearity of that function;
 - the target of a learning network is tends to simulate of a function instead of predicting something.
